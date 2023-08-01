@@ -3,7 +3,7 @@ function doTask() {
     const bar = document.getElementById('birthday').value;
     
     localStorage.setItem("name-item", bar);
-    location.href = "index.html";
+    location.href = "second.html";
 }
 
 const saffi = localStorage.getItem("name-item");
