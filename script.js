@@ -6,10 +6,25 @@ function doTask() {
     location.href = "second.html";
 }
 
-// var audio = new Audio('audio.mp3');
-// audio.play();
+var audio = new Audio('audio.mp3');
+audio.play();
+var count=1;
+const data=document.getElementById("vol");
 
 function volume() {
+    if(count==0)
+    {
+        count=1;
+        audio.play();
+        data.innerHTML.src="mute.png";
+    }
+    else
+    {
+        count=0;
+        audio.pause();
+        data.innerHTML.src="mute.png";
+    }
+    
     if (document.getElementById("vol").src == "volume.png")
     {
         document.getElementById("unmute").src = "mute.png";
