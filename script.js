@@ -14,15 +14,15 @@ const data=document.getElementById("vol");
 function volume() {
     if(count==0)
     {
+        data.src="volume.png";
         count=1;
         audio.play();
-        data.innerHTML.src="mute.png";
     }
     else
     {
         count=0;
         audio.pause();
-        data.innerHTML.src="mute.png";
+        data.src="mute.png";
     }
     
     if (document.getElementById("vol").src == "volume.png")
