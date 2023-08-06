@@ -6,6 +6,22 @@ function doTask() {
     location.href = "second.html";
 }
 
+// var audio = new Audio('audio.mp3');
+// audio.play();
+
+function volume() {
+    if (document.getElementById("vol").src == "volume.png")
+    {
+        document.getElementById("unmute").src = "mute.png";
+        document.getElementById('bgAudio').muted = true;
+    }
+    else
+    {
+        document.getElementById("mute").src = "volume.png";
+        document.getElementById('bgAudio').muted = false;
+    }
+}
+
 const saffi = localStorage.getItem("name-item");
 
 const daysEl = document.getElementById('days');
