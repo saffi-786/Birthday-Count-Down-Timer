@@ -33,3 +33,28 @@ h2{
     -webkit-background-clip: text;
     color: transparent;
 }
+
+#birthday{
+    padding: 3px 10px;
+    border: 2px solid rgb(81, 5, 5);
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(56, 18, 18);
+}
+
+#btn{
+    padding: 4px 10px;
+    border: 2px solid rgb(81, 5, 5);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(56, 18, 18);
+
+}
+
+#btn:hover{
+    border: 2px solid rgb(205, 98, 98);
+    color: wheat;
+    background-image: url(https://plus.unsplash.com/premium_photo-1670157709475-804e923487fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Q09MT1VSU3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60);
+}
